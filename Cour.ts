@@ -1,0 +1,3 @@
+interface Cour {
+  size: number;
+}

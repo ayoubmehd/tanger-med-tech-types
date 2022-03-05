@@ -1,4 +1,4 @@
-export interface GlobalSetting {
+interface GlobalSetting {
   maxPeriod: Date;
   pricePerHour: number;
 }

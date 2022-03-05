@@ -1,0 +1,3 @@
+interface Role {
+  type: string;
+}

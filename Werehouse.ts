@@ -1,0 +1,3 @@
+interface Werehouse {
+  size: Size;
+}

@@ -1,0 +1,3 @@
+interface TransportType {
+  type: string;
+}
