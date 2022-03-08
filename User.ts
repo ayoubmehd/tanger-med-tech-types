@@ -4,3 +4,5 @@ interface User {
   password: string;
   role?: Role;
 }
+
+type UserInput = Omit<User, "_id">;

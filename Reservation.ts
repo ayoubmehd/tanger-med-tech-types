@@ -5,3 +5,5 @@ interface Reservation {
   container?: Container;
   transporter?: Transporter;
 }
+
+type ReservationInput = Omit<Reservation, "_id">;
