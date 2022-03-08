@@ -7,4 +7,10 @@ interface Container {
   category: Category;
 }
 
-type ContainerInput = Omit<Container, "_id">;
+interface ContainerInput
+  extends Omit<Container, "_id" | "position" | "type" | "size" | "category"> {
+  position: PositionInput;
+  type: ContainerTypeInput;
+  size: SizeInput;
+  category: CategoryInput;
+}

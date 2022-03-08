@@ -5,4 +5,6 @@ interface Transporter {
   type: TransportType;
 }
 
-type TransporterInput = Omit<Transporter, "_id">;
+interface TransporterInput extends Omit<Transporter, "_id" | "type"> {
+  type: TransportTypeInput;
+}

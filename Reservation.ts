@@ -2,8 +2,12 @@ interface Reservation {
   _id: string;
   date: Date;
   isDone: boolean;
-  container?: Container;
+  containers?: Container[];
   transporter?: Transporter;
 }
 
-type ReservationInput = Omit<Reservation, "_id">;
+interface ReservationInput
+  extends Omit<Reservation, "_id" | "containers" | "transporter"> {
+  containers?: ContainerInput[];
+  transporter: TransporterInput;
+}
