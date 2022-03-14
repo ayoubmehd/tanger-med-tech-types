@@ -6,5 +6,5 @@ interface Transporter {
 }
 
 interface TransporterInput extends Omit<Transporter, "_id" | "type"> {
-  type: TransportTypeInput;
+  type: string;
 }
